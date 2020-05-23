@@ -65,7 +65,7 @@
 #define TF(INST)		(RT(INST) & 0x1)
 
 #define TARGET(INST)		(INST)->r_t.target
-#define SET_TARGET(INST, VAL)	(INST)->r_t.target = (mem_addr)(VAL)
+#define SET_TARGET(INST, VAL)	(INST)->r_t.target = (uint32_t)(VAL)
 
 #define ENCODING(INST)		(INST)->encoding
 #define SET_ENCODING(INST, VAL)	(INST)->encoding = (int32)(VAL)
